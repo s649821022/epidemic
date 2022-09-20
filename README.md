@@ -92,7 +92,7 @@
 # Django原生部署
 
 ## 1.安装环境poetry
-![安装poetry](https://www.cnblogs.com/jiakecong/p/15430012.html)
+[安装poetry](https://www.cnblogs.com/jiakecong/p/15430012.html)
 
 ## 2.拉取代码
 ```
