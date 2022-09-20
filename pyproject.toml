@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "epidemic"
+version = "0.1.0"
+description = ""
+authors = ["jkc"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^4.0.4"
+django-environ = "^0.8.1"
+djoser = "^2.1.0"
+drf-spectacular = "^0.22.1"
+drf-extensions = "^0.7.1"
+django-extensions = "^3.1.5"
+django-model-utils = "^4.2.0"
+django-imagekit = "^4.1.0"
+Pillow = "^9.1.0"
+factory-boy = "^3.2.1"
+mysqlclient = "^2.1.0"
+django-cors-headers = "^3.12.0"
+djangorestframework = "^3.13.1"
+django-filter = "^21.1"
+
+[tool.poetry.dev-dependencies]
+django-debug-toolbar = "^3.4.0"
+isort = "^5.10.1"
+black = "^22.3.0"
+flake8 = "^4.0.1"
+flake8-isort = "^4.1.1"
+pytest-django = "^4.5.2"
+django-test-plus = "^2.2.0"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+
+[tool.isort]
+profile = "black"
+skip = ["migrations"]
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | migrations
+  )/
+)
+'''
