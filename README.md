@@ -140,3 +140,11 @@ python manage.py migrate  # 执行数据库迁移脚本
 python manage.py runserver 
 ```
 
+## 7.前端部署
+![前端部署](https://github.com/s649821022/epidemicweb)
+前端部署拉取代码，执行以下命令
+```
+npm install # 安装依赖环境
+npm run serve # 启动命令
+```
+
